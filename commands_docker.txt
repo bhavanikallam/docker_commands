@@ -1,0 +1,18 @@
+sudo docker build -t imagename .
+docker ps -a
+docker images
+docker run imagename
+docker rm containerid
+docker rmi imagenamme
+docker stop containerid
+to go to container 
+sudo docker exec -i -t containername sh
+docker run  -p 5000:5000 imagename  (for port)
+docker run --name h_haslett(container_name) -v (host_path)/mnt/d/dockerr/Deploy-machine-learning-model:/app(container_path)  image_name deploy_ml
+docker run --name h_haslett -v /mnt/d/dockerr/Deploy-machine-learning-model:/app deploy_ml
+Add crontab schedule expression along with the command  in the editor
+ex: for executing the command for every minute
+*/1 * * * * sudo docker run –rm –name containername -v host_path:container_path imagename
+docker run imagename java -jar jarname
+
+docker run --rm --name hs_haslett -v /mnt/d/dockerr/Deploy-machine-learning-model:/app deploy_ml
